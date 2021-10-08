@@ -286,7 +286,7 @@ justify-content: space-between;
     width: 35%;
     height: 50vh;
     margin-bottom: 3vh;
-    background-image: url(Broader Context.png);
+    background-image: url(broader.png);
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -325,7 +325,7 @@ justify-content: space-between;
 
 .popular .box-container .box .price{
 
-    position: absolute;
+  position: absolute;
   top:3rem; left:3rem;
   background:var(--red);
   color:#fff;
