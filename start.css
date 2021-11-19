@@ -138,21 +138,26 @@ header .navbar a:hover{
 }
 
 
-.home .content{
-  flex:1 1 40rem;
-  padding-top: 6.5rem;
-}
-
-
 .home .image{
   flex:1 1 40rem;
+  
+  position: relative;
+  text-align: center;
+  animation:float 3s linear infinite;
+
 }
 
 
 .home .image img{
-  width:100%;
+  width:50%;
   padding:1rem;
-  animation:float 3s linear infinite;
+
+}
+
+.home .image p{
+  margin-top: 40px;
+  font-size: 30px;
+  
 }
 
 @keyframes float{
@@ -164,20 +169,6 @@ header .navbar a:hover{
   }
 }
 
-
-.home .content h3{
-  font-size: 5rem;
-  color:rgb(255, 38, 0);
-}
-
-
-.home .content p{
-  font-size: 2.2rem;
-  color:rgb(0, 0, 0);
-  padding:1rem 0;
-  font-weight: 1000;
-
-}
 
 
 .proj{
@@ -211,13 +202,17 @@ justify-content: space-between;
 
   margin-top: auto;
   margin-bottom: auto;
+  position: relative;
   width: 60%;
   height: 50vh;
   padding: 10px;
   left: 50%;
+  transform: translateX(-50%);
+  justify-content: center;
+  justify-content: space-between;
   text-align: center;
   vertical-align: middle;
-  background-color: rgb(253, 218, 177);
+  background-color: rgb(94, 94, 94);
   border: 1vh solid rgb(0, 0, 0);
   box-shadow: #333 4px 4px 8px;
 
@@ -241,16 +236,34 @@ justify-content: space-between;
 
 
   #p2{
-
+/*
   width: 60%;
   height: 50vh;
   padding-left: 10px;
   padding-right: 10px; ;
   text-align: center;
+
   background-color: rgb(253, 218, 177);
   border: 1vh solid rgb(0, 0, 0);
   box-shadow: #333 4px 4px 8px;
+*/
 
+
+margin-top: auto;
+margin-bottom: auto;
+position: relative;
+width: 60%;
+height: 50vh;
+padding: 10px;
+left: 50%;
+transform: translateX(-50%);
+justify-content: center;
+justify-content: space-between;
+text-align: center;
+vertical-align: middle;
+background-color: rgb(253, 218, 177);
+border: 1vh solid rgb(0, 0, 0);
+box-shadow: #333 4px 4px 8px;
   }
   
   
@@ -286,7 +299,7 @@ justify-content: space-between;
     width: 35%;
     height: 50vh;
     margin-bottom: 3vh;
-    background-image: url(broader.png);
+    background-image: url(Broader\ Context.png);
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -297,13 +310,14 @@ justify-content: space-between;
 
     display: flex;
     flex-wrap: wrap;
-    gap:1.5rem;
+    gap:15.5rem;
+    justify-content: space-evenly;
 
 }
 
 .popular .box-container .box{
 
-    padding:2rem;
+  padding:2rem;
   background:#fff;
   box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
   border:.1rem solid rgba(0,0,0,.3);
@@ -316,7 +330,7 @@ justify-content: space-between;
 
 .popular .box-container .box img{
 
-    height:25rem;
+  height:15rem;
   object-fit: contain;
   width:100%;
   border-radius: .5rem;
@@ -325,7 +339,7 @@ justify-content: space-between;
 
 .popular .box-container .box .price{
 
-  position: absolute;
+    position: absolute;
   top:3rem; left:3rem;
   background:var(--red);
   color:#fff;
@@ -492,14 +506,13 @@ justify-content: space-between;
   
   background-color: rgb(46, 45, 45);
   
-  border-radius: 50%;
+  border-radius: 2%;
   margin-top: 2%;
   margin-bottom: 2%;
   
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
-
   
   border: 0.3vh solid rgba(0, 0, 0, 0.849);
   box-shadow: #333 4px 4px 8px;
