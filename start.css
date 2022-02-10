@@ -632,7 +632,7 @@ justify-content: space-between;
   right:2rem;
   padding:.5rem 1.5rem;
   font-size: 4rem;
-  background:var(--red);
+  background:rgb(66, 66, 66);;
   color:#fff;
   border-radius: .5rem;
   transition: 1s linear;
